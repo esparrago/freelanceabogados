@@ -1,0 +1,180 @@
+/* jquery.formbuilder css */
+
+h1 { display: none; }
+
+.frmb-control { }
+
+.frmb-submit { }
+
+ul.frmb {
+	padding-left: 0px;
+	list-style-type: none;
+}
+
+.frmb li {
+	margin-bottom: 5px;
+	padding: 5px;
+	border: 1px solid #DFDFDF;
+	background: #F9F9F9;
+}
+
+.frmb li:hover {
+	border: 1px solid #DFDFDF;
+	background: #FCFCFC;
+}
+
+.frmb .legend {
+	cursor: move;
+}
+
+.frmb .legend .toggle-form {
+	float: right;
+}
+
+.frm-elements {
+	padding: 5px 0;
+}
+
+.frm-elements label {
+	width: 30%;
+	float: left;
+	margin-left: 5px;
+	line-height: 24px;
+}
+
+.frm-elements .false-label {
+	width: 30%;
+	float: left;
+	margin-left: 5px;
+	line-height: 24px;
+}
+
+.frm-elements input[type=text] {
+	float: left;
+	width: 60%;
+}
+
+.frm-elements .fields {
+	width: 60%;
+	float: left;
+}
+
+.frm-elements label.error {
+	width: 60%;
+	margin-left: 30%;
+	padding-left: 5px;
+	color: #F00;
+}
+
+.frm-elements .fields label.error {
+	width: 100%;
+	margin-left: 0;
+	padding-left: 0;
+	color: #F00;
+}
+
+.frm-elements .fields input[type=checkbox],
+.frm-elements .fields input[type=radio] {
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+.frm-elements .false-label,
+.frm-elements .fields { margin-top: 10px }
+
+.frm-elements .fields div {
+	clear: both;
+	float: left;
+	width: 99%;
+}
+
+.frm-elements .fields input[type=text] {
+	width: 75%;
+}
+
+.frm-elements .fields label.auto {
+	width: auto;
+	margin: 0 0 5px 0;
+}
+
+.frm-elements .fields .remove {
+	margin-left: 10px;
+	line-height: 24px;
+}
+
+.frm-elements .fields .add-area {
+	position: relative;
+	left: -90px;
+	line-height: 0;
+	margin-top: -13px;
+	text-align: right;
+	width: 80px;
+}
+
+.frm-elements .fields .add-area .add {
+	clear: both;
+}
+
+.frm-elements:after,
+.frm-fld:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.frm-elements,
+.frm-fld { display: inline-block }
+
+.frm-elements,
+.frm-fld { display: block }
+
+.del-button {
+	float: right;
+	margin-right: 10px;
+}
+
+.toolbar {
+	margin: 0 auto;
+	position: relative;
+	height: 25px;
+	z-index: 1;
+}
+
+.button-group {
+	overflow: hidden;
+	position: relative;
+	margin: 0 auto;
+}
+
+.button-group-fixed {
+	position: fixed;
+	top: 0;
+}
+.form-header {
+	display: block;
+	width: auto;
+	position: relative;
+	z-index: 1000;
+	margin-bottom: 15px;
+}
+
+.frmb .del-button {
+	display: block;
+	margin-top: 1px;
+	width: 16px;
+	height: 16px;
+	text-indent: -999em;
+	background: url("../../framework/images/cancel.png") no-repeat;
+	opacity: .5;
+}
+
+.frmb .del-button:hover {
+	opacity: 1;
+}
+
+.field-tip {
+	padding: 3px;
+}

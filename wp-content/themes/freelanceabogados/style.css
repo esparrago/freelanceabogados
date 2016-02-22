@@ -1,0 +1,46 @@
+/*
+Theme Name: Freelanceabogados
+*/
+
+@import url('styles/core/foundation-icons.css');
+
+/*  =========== [ Default Stylesheet Table of Contents ] =========== */
+/*
+ * Typography, General
+ * Layout, General
+ * UI elements, General
+ * Header
+ * Category Area below Header
+ * Main Content
+ * Listings
+ * Single Project
+ * Blog
+ * Single post and page
+ * Forms
+ * Dashboard
+ * Footer
+ * User pages
+ * Widgets
+ * Dropdown category lists
+ * Proposal
+ * Escrow
+ * Disputes
+ * Coupons
+ * Gateways
+ * WordPress Core
+ * Header Splash
+ * 3rd Party
+ * Responsive
+ */
+
+ /*  =========== [ Typography, General ] =========== */
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+	font-family: Open Sans, sans-serif;
+	overflow-y: hidden;
+}

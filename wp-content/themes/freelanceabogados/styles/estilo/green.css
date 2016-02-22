@@ -1,0 +1,484 @@
+/*  =========== [ Bee Green (Yellow/Green) Stylesheet Colors: Table of Contents ] =========== */
+
+/*
+ * 1. Layout, General
+ * 2. Header
+ * 3. Listings
+ * 4. Single
+ * 5. Forms
+ * 6. Sidebar
+ * 7. Dashboard
+ * 8. Footer
+ */
+
+ /* =========== [ 1. LAYOUT, GENERAL ] =========== */
+
+a, a:hover {
+	color: #02ccd3;
+}
+
+.button,
+.button[disabled] {
+	background-color: #02ccd3;
+}
+
+.button[disabled] {
+	opacity: 0.6;
+}
+
+.widget_create_project_button .button {
+	background-color: #01b8bf;
+}
+
+.button:hover {
+	background-color: #09a6ac;
+}
+
+.button.secondary {
+	background-color: #e0e4ee;
+}
+
+.button.secondary:not(.dropdown) :hover {
+	background-color: #09a6ac;
+	color: #fff;
+}
+
+.top-bar-section a:hover {
+	opacity: 0.7;
+	text-decoration: none;
+}
+
+#navigation li :not(.button):hover {
+	text-decoration: none;
+	background-color: #f1a005;
+	opacity: 1;
+}
+
+.project > h2 a {
+	color: #415157;
+}
+
+.projects-section i,
+.project-meta-below-desc i,
+.order-main i,
+.proposal-meta i,
+.user-header-meta i,
+.user-projects-stats i,
+.single-project-meta-tags i,
+.work-user-meta > :not(.user-meta-info) i,
+.freelancer-loc i {
+	color: #ABA8B8;
+}
+
+.full-width .content-header {
+	background-color: #2d9b7d;
+}
+
+/* =========== [ 2. HEADER ] =========== */
+
+.top-bar {
+	background-color: #fff;
+}
+
+/* main nav menu */
+
+.main-navigation,
+.lower-top-bar,
+.main-navigation .top-bar.expanded .title-area{
+	background-color: #ffa800;
+}
+
+.lower-top-bar li a:not(.button) {
+	background: #ffa800;
+}
+
+.lower-top-bar li a {
+	border-right: 1px solid #da9000;
+}
+
+/* below navigation widget */
+
+.top-widgets {
+	color: #fff;
+	background-color: #38b593;
+}
+
+/* search */
+
+.search-button button,
+.sidebar-archive .section-head input[type="submit"] {
+	background: url('../images/icon-search.png') #38b593 center center no-repeat;
+}
+
+.search-button button:hover,
+.sidebar-archive .section-head input:hover {
+	background-color: #2d9b7d;
+}
+
+/* responsive menus */
+
+.top-navigation .top-bar .toggle-topbar a span {
+	-webkit-box-shadow: 0 10px 0 1px #38b593, 0 16px 0 1px #38b593, 0 22px 0 1px #38b593;
+	box-shadow: 0 10px 0 1px #38b593, 0 16px 0 1px #38b593, 0 22px 0 1px #38b593;
+}
+
+.main-navigation .top-bar.expanded .toggle-topbar a span {
+	-webkit-box-shadow: 0 10px 0 1px #de9428, 0 16px 0 1px #de9428, 0 22px 0 1px #de9428;
+	box-shadow: 0 10px 0 1px #de9428, 0 16px 0 1px #de9428, 0 22px 0 1px #de9428;
+}
+
+.lower-top-bar.expanded .top-bar-section ul li {
+	border-top: 1px solid #da9000;
+}
+
+/* =========== [ 3. LISTINGS ] =========== */
+
+.user-meta-info a,
+.agreement a,
+.bidder-display-name a {
+	color: #71A3B6;
+}
+
+.project-meta:before {
+	border-bottom: 8px solid #fff;
+}
+
+.project > h2 {
+	background-color: #dfe4ed;
+}
+
+.project-skills .label,
+.user-skills .label,
+.bidder-skills .label {
+	background-color: #e6e8ea;
+	color: #353d30;
+}
+
+/* project featured loop */
+
+.featured.project > h2:hover {
+	background-color: #28896f;
+}
+
+.featured > h2 {
+	background-color: #38b593;
+}
+
+.featured .project-meta:before {
+	border-bottom: 8px solid #2d9b7d;
+}
+
+.featured .project-meta,
+.featured .project-description,
+.featured .project-author-meta {
+	background-color: #2d9b7d;
+	color: #c6dfd8;
+}
+
+.featured .project-cat a,
+.featured .project-meta-below-desc {
+	background-color: #2d9b7d;
+	color: #79d3ba;
+}
+
+.featured .project-meta-below-desc i,
+.featured .project-meta-below-desc a {
+	color: #79d3ba;
+}
+
+.featured .project-author-meta,
+.featured .project-budget-wrapper,
+.featured .project-num-proposals,
+.featured .project-description,
+.featured .project-meta-below-desc,
+.featured .project-location,
+.featured .project-cat {
+	border-color: #38b290;
+}
+
+.featured .label {
+	background-color: #5cbaa0;
+	color: #f0eff4;
+}
+
+.featured .project-skills .label:after {
+	border-left-color: #5cbaa0;
+}
+
+/* project loop */
+
+.budget-deadline .project-budget {
+	background-color: #02ccd3;
+}
+
+.budget-deadline .project-budget .budget-type {
+	background-color: #01b8bf;
+}
+
+.budget-deadline .project-expires {
+	background-color: #b064e0;
+}
+
+.budget-deadline .project-expires .days-left {
+	background-color: #cc8af6;
+}
+
+/* freelancer loop */
+
+.freelancers-header .article-title h3 {
+	color: #fff;
+	background-color: #c77ff5;
+}
+
+/* ribbon flag ends */
+
+.freelancers-header .article-title h3:before,
+.freelancers-header .article-title h3:after {
+	border-color: #c77ff5;
+}
+
+/* pagination */
+
+ul.pagination li a {
+	background-color: #e6e8ea;
+	color: #000000;
+}
+
+.home ul.pagination li a {
+	background-color: #02ccd3;
+}
+
+ul.pagination li.current a,
+ul.pagination li.current a:hover {
+	color: #fff;
+}
+
+ul.pagination li.current a,
+ul.pagination li.current a:hover,
+ul.pagination li a:hover {
+	background-color: #02ccd3;
+	text-decoration: none;
+	color: #fff;
+}
+
+/* blog loop */
+
+.post-date-box {
+	color: #fff;
+	background-color: #38b593;
+}
+
+.post-date-box .box-comment-link {
+	border-top: 1px solid #2d9b7d;
+}
+
+/* =========== [ 4. SINGLE ] =========== */
+
+.single-project .single-project-header {
+	background-color: #1B5545;
+}
+
+.single-project .single-project-header:after {
+	border-top: 8px solid #1B5545;
+}
+
+.single-project .bid .button {
+	background-color: #fb6b5b;
+	color: #fff;
+}
+
+.single-project .bid .button:hover {
+	background-color: #C95B4F;
+}
+
+.single-by-widget-meta a {
+	color: #02ccd3;
+}
+
+.section-container.section-tabs .active p.title {
+	background: #2d9b7d;
+}
+
+article.post a,
+article.page a,
+article.fourzerofour a {
+	color: #02ccd3;
+}
+
+.comment-form .logged-in-as a {
+	color: #fff;
+	background-color: #38b593;
+}
+
+.comment-form .logged-in-as a:nth-of-type(2) {
+	background-color: #02ccd3;
+}
+
+.comment-form .logged-in-as a:nth-of-type(2):hover {
+	background-color: #09a6ac;
+	text-decoration: none;
+}
+
+/* proposals */
+
+.single-bid .bid-terms {
+	background-color: #2d9b7d;
+	color: #fff;
+}
+
+.single-bid .bid-terms:before {
+	border-left: 8px solid #2d9b7d;
+}
+
+.bid-terms .bid {
+	background-color: #02ccd3;
+}
+
+.bid-terms .bid .proposal-delivery {
+	background-color: #01b8bf;
+}
+
+.bid-terms .submit-time {
+	background-color: #cc8af6;
+}
+
+.bid-terms .submit-time .proposal-posted-time {
+	background-color: #b064e0;
+}
+
+/* =========== [ 5. FORMS ] =========== */
+
+form input[type="submit"] {
+	background-color: #02ccd3;
+	color: #fff;
+}
+
+form input[type="submit"].button:not(.secondary):hover:not(:disabled),
+form input[type="submit"]:hover {
+	background-color: #09a6ac;
+}
+
+.log-in .register-box {
+	background-color: #ffa800;
+	color: #fff;
+}
+
+.log-in .register-box .button {
+	background-color: #38b593;
+}
+
+.log-in .register-box .button:hover {
+	background-color: #2d9b7d;
+}
+
+.log-in .register-box .button a:hover {
+	text-decoration: none;
+}
+
+#pass-strength-result {
+	background-color: #2d9b7d;
+	color: #fff;
+}
+
+.create-project form.custom .selector,
+.order-checkout form.custom .selector,
+.dashboard-workspace form.custom .selector,
+.edit-profile form.custom .selector,
+#load-saved-filter-form .selector {
+	background-color: #38b593;
+	border-bottom: solid 1px #fff;
+}
+
+form.custom .custom.dropdown .selector:after {
+	border-color: #FFF transparent transparent transparent;
+}
+
+.create-project .section-head h1,
+.order-checkout .section-head h1,
+.agreement .section-head h1 {
+	background-color: #2d9b7d;
+	color: #fff;
+}
+
+.create-project .budget-currency .custom.dropdown a,
+.create-project .location-type .custom.dropdown a {
+	background-color: #38b593;
+	color: #fff;
+}
+
+.create-project .selected-currency {
+	background-color: #38b593;
+	color: #fff;
+}
+
+.create-project .files .button:hover {
+	background-color: #09a6ac;
+	color: #fff;
+}
+
+.plan h3 {
+	background-color: #38b593;
+	color: #fff;
+}
+
+/* progress tracker steps */
+
+ol.progtrckr li.progtrckr-done,
+ol.progtrckr li.progtrckr-todo {
+    color: #445159;
+    border-top: 4px solid #ffa800;
+    border-bottom: 4px solid #dee5ee;
+}
+
+ol.progtrckr li.progtrckr-done:before {
+    background-color: #ffa800;
+}
+
+ol.progtrckr li.progtrckr-todo:before {
+    color: #ffa800;
+}
+
+/* =========== [ 6. SIDEBAR ] =========== */
+
+/* sidebar widgets */
+
+.sidebar-widget-wrap > h3 {
+	background-color: #2d9b7d;
+	color: #fff;
+}
+
+/* =========== [ 7. DASHBOARD ] =========== */
+
+.dashboard > h2,
+.edit-profile > h2 {
+	color: #2d9b7d;
+}
+
+.dashboard > h2 i {
+	color: #38b593;
+}
+
+.dashboard table thead > tr {
+	background-color: #2d9b7d;
+}
+
+.dashboard-notifications .new-notification {
+	color: #2d9b7d;
+}
+
+.agreement .section-primary-info {
+	background-color: #2d9b7d;
+	color: #fff;
+}
+
+/* =========== [ 8. FOOTER ] =========== */
+
+.footer,
+.widgets-footer {
+	color: #84758d;
+}
+
+.footer a,
+.widgets-footer a {
+	color: #ac96ba;
+}

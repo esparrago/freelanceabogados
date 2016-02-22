@@ -1,0 +1,144 @@
+1.3.1 - 01/22/2015
+ fixed:
+	- No permissions to relist message showing after successfully relisting a project
+	- Dashboard right sidebar 'Stats' counts
+	- Featured proposals sorting (featured proposals should always display first)
+	- Proposals canceled by freelancers selectable as candidates by employers
+	- Pagination for 'Purchases' on user dashboard
+	- 'From' email header for new user registration and password info always showing 'WordPress'
+	- Refine search not filtering results
+	- PHP warnings on 'Saved Filters' widget when some third party plugins installed
+	- Missing notification to freelancers when project terms were updated
+	- Employers able to select more then one candidate for a project
+	- Blog comment links hidding part of the single page content when clicked
+	- Avatar upload on user profiles not working
+changes:
+	- Featured proposals are displayed first on dashboard list of proposals
+	- Added indication for featured proposals on dashboard list of proposals
+	- Users are now redirected to their dashboard immediately after login or registration
+
+1.3 - 01/06/2015
+ fixes:
+	- Projects clarification section sometimes kept open for comments while project was not active
+	- Listings not being sorted correctly on some sorting items
+	- Projects with endless duration defaulting to the default duration set in the settings page
+	- No permissions for canceling/editing/deleting non published projects
+	- Display image thumbnail on 'Recent Projects' widget (project must have an image attached - first image uploaded is set as the featured image)
+	- Search icon on sidebar search bar being duplicated in IE
+	- Number of Sub-Categories option in customizer not working correctly
+	- Addons included in plans being ignored
+	- When logged out and a wrong password was entered message was always "You are now logged out."
+	- Radio buttons in custom forms allowing more then one checked option
+	- Freelancers work actions not available (e.g: View Workspace) when ‘Escrow’ disabled
+	- 404 error with non-admin users when posting a project with moderation enabled
+	- Error 'Fatal Error: Class APP_Paypal not found' on theme activation
+ changes:
+	- On registration, redirect users to dashboard instead of frontpage
+	- External links (Facebook, Twitter, etc) are now opened on a new browser tab
+	- Project orders email notification sent to admins now links back to the order page instead of the project page
+	- Site owners can now access all workspace information for employers and freelancers from the related order or dispute page
+	- Footer widgets titles not showing up to visitors
+	- Deleted bundled 'jQuery Validate' library. Uses library provided by AppThemes framework instead
+	- Deleted unused 'jQuery Colorbox' library
+	- Added option to disable optional header area from the 'Customizer' page
+new:
+	- Disputes are now available for cases where the freelancer completes the work but the employer cancels or closes the project as incomplete (Admin > Escrow > Disputes)
+	- Allow choosing the number of valid days for opening a dispute after the project is canceled/marked incomplete (Admin > Escrow > Disputes)
+	- Allow choosing which budget types (fixed price or/and per hour) are enabled (Admin > Projects > Budget)
+	- Allow changing the number of allowed skills (Admin > Projects > Skills)
+	- Allow choosing which location types (remote and/or local) are enabled (Admin > Projects > Location)
+	- Allow hiding proposals quotes (amount/message) from other users ( Admin > Proposals > Visibility)
+	- Added new 'Urgent' option to 'Sort By' select box (displays only urgent projects)
+	- Added new option to the customizer to disable the optional header area
+
+1.2.1 - 10/20/2014
+fixes:
+	- Error 'Fatal error: Can't inherit abstract function APP_Payment_Processor::form()' on theme activation
+	- Translation domain missing for some strings (could not be translated)
+	- Credits purchase form steps not being displayed correctly
+changes:
+	- Added compatibility for upcoming AppThemes 'Balanced-Payments' plugin (provides new escrow gateway)
+	- Replaced user type radio button with a dropdown on registration form for better compatibility with iOS
+
+1.2 - 09/22/2014
+fixes:
+	- 404 error when visiting a project page after completing the checkout process, with projects moderation enabled
+	- Proposals currency defaulting to USD throughout the site
+	- Fatal error when editing a project from the backend
+	- Editable proposals/projects on non-active projects
+	- SSL issues with facebook widget
+	- Endless loop on credits purchase plan select page when project posting set to free
+	- Projects admin menu item displaying two icons
+	- Missing translation domains on some strings
+	- Invalid orders URL on orders actions admin notification
+	- Tip baloon when hovering information icon on agreement form not showing
+	- Non editable project durations sometimes showing an empty duration (should always display 30 as default)
+	- Form submit on workspaces always redirecting to dashboard project listings
+	- Empty categories not showing on the categories listings
+changes:
+	- Replaced 'Reset Credits Monthly' checkbox with a 'Free Monthly Credits' input option for additional control over offered credits
+	- Projects proposals are now only visible to registered users
+new:
+	- Added PayPal Adaptive Payments for escrow transactions
+	- Added Escrow settings page
+	. Charge Flat Fees on Escrow transactions
+	. Charge Percentage based Fees on Escrow transactions
+	- Sidebar for escrow funds transfer
+	- Display agreed budget price on workspaces 'Terms' Tab
+	- Display total amount for 'per hour' budget types on workspaces. e.g: 100$ (2h*50$)
+
+1.1 - 08/11/2014
+fixes:
+	- 'HRB_Expire_Handler' declaration after child classes causing "PHP Fatal error: Class 'HRB_Expire_Handler' not found" for some users
+	- Removed duplicate 'id' attribute in search input field
+	- Ordered/unordered lists not being wrapped correctly in post/pages content
+	- Featured image being displayed in single posts
+	- Featured image not properly floated to the left in posts
+	- Solid background being displayed when hovering favorite icon in single project page
+	- Empty title in 'Find Freelancers' listings when YOAST SEO plugin enabled
+	- Invalid CSS class name for Tabs sections in 'scripts.js'
+	- Blank space on the right when viewing site in small screens
+	- Splash screen displaying on blog listing even when set to 'Front Page Only'
+	- Currency dropdown in post a project form not defaulting to currency set in 'Payments' > 'Settings'
+	- Fatal error when using internal templates on new pages
+	- Days until expiration not showing correctly in favorite and profile project listings
+	- Added missing WP core CSS styles for caption and images alignment
+changes:
+	- Social network fields for the site, social connect widget, user profile, etc, optionally accept full URL’s instead of only the network user ID. Useful for some social networks like LinkedIn that can have multiple URL types like ‘linkedin.com/in/username' (default) or ‘linkedin.com/company/username’ (for companies). Users with a company profile should paste the full URL instead, otherwise the outputted URL will be the default ‘linkedin.com/in/username'
+	- Removed 'Local :: ' prefix from locations on the refine search sidebar
+	- Prefix refine search sidebar locations with the country (e.g: 'Portugal :: Lisbon', 'USA :: New York' ) in sites with no country restrictions
+	- Store additional geolocation metadata for projects and users locations to provide further geolocation features in future releases
+	- Added two new action hooks to the dashboard sidebar: 'appthemes_before_sidebar_widgets' and 'appthemes_after_sidebar_widgets' (props to 'mhupfield')
+	- Disabled CSS3 transitions on page loads (fixes ugly background color fades on page loads)
+	- Added CSS3 easing transitions to footer links
+	- Added support for CSS3 transitions on all major browsers
+	- Removed @import declarations from color stylesheets (better performance since Foundation dependent CSS styles are now loaded using <link>)
+	- Removed duplicate CSS3 transitions styles from color CSS stylesheets
+	- Moved inline CSS styles in recent posts widget to external CSS file
+	- Display 'No ratings yet' when ratings not available on users listings and profile
+	- Display 'n/a' in dashboard sidebar when rating not available
+	- Static refine search placeholder on sidebar replaced with real refine search input (static refine search text was already being mistaken by an input)
+	- Localized default widget text
+	- Additional tip text in 'Reset Credits' setting: "For users with paid credits, the extra credits will be added to their total"
+	- Replaced 'id="overview"' attribute with 'class="overview"', where used
+	- Discrete border with rounded corners added to blog posts images
+	- Internal template files are no longer selectable from the templates dropdown
+	- Removed duplicate heading title from 'Categories' page
+	- Removed 'Latest Projects' heading title from the projects listings (displayed only on frontpage)
+	- Removed duplicate title from top header in single post and single project pages. Single posts are now titled ‘Blog’ and single project pages are titled ‘Project Details’
+	- Renamed ‘Project Details’ Tab to ‘Details’ in single project pages
+	- Display 'Browsing - %taxonomy%' when browsing project listings by taxonomy instead of 'Latest Projects - %taxonomy%'
+	- Deleted empty 'login.css' stylesheet in '/styles/'
+	- Updated 'select2' JS plugin to version 3.5.0
+new:
+	- New 'Geolocation' Tab:
+	  . Option to set the language for geolocation results
+	  . Option to limit projects and users locations to a specific country
+	  . Option to limit projects and users geolocation results using google places types: geocode, cities, regions or all (default).
+	  . Option to refine projects/users search by: country, location or postal code
+	- Restrict currencies:
+	  . Option to limit project budget to one or multiple currencies
+	  . Option to restrict user rates to budget currencies
+	- Option to allow avatar uploads on user profiles
+
+1.0 - First Release

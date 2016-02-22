@@ -1,0 +1,96 @@
+.app-slider {
+	position: relative;
+	margin: 0;
+}
+
+.app-slider .left-arrow,
+.app-slider .right-arrow {
+	position: absolute;
+	top: 50%;
+	margin-top: -30px;
+	width: 36px;
+	height: 60px;
+	line-height: 50px;
+	color: white;
+	background: transparent;
+	border: 0;
+	text-indent: -9999px !important;
+	z-index: 2;
+}
+
+.app-slider .left-arrow:hover,
+.app-slider .right-arrow:hover {
+	background-color: rgba(0,0,0,0.3);
+}
+
+.app-slider .left-arrow {
+	left: 0;
+}
+
+.app-slider .right-arrow {
+	right: 0;
+}
+
+.app-slider .left-arrow:before,
+.app-slider .right-arrow:before {
+	position: absolute;
+	top: 50%;
+	margin-top: -10px;
+	display: block;
+	width: 0;
+	height: 0;
+	border: inset 10px;
+	border-color: transparent;
+	content: "";
+}
+
+.app-slider .left-arrow:before {
+	border-right-style: solid;
+	border-right-color: #fff;
+}
+
+.app-slider .right-arrow:before {
+	border-left-style: solid;
+	border-left-color: #fff;
+	left: 50%;
+	margin-left: -4px;
+}
+
+.app-slider .attachment-caption {
+	position: absolute;
+	bottom: 0;
+	background-color: rgba(51,51,51,0.8);
+	color: #fff;
+	width: 100%;
+	padding: 0.625rem 0.875rem;
+}
+
+.app-slider .attachments {
+	overflow: hidden;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.app-slider .attachment {
+	top: 0;
+	left: 0;
+	z-index: 0;
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	overflow: hidden;
+	display: none;
+}
+
+.app-slider .attachment.current {
+	display: block;
+	z-index: 1;
+}
+
+.app-slider .mejs-container {
+	margin: 0;
+}

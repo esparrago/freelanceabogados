@@ -1,0 +1,88 @@
+/* This file is loaded on all admin pages, so be specific! */
+
+select[disabled] {
+	color: #ADA9A5;
+}
+
+.column-thumbnail {
+	width: 80px;
+	text-align: center;
+}
+
+#featured-pricing {
+	width: auto;
+	margin: 16px 4px;
+}
+
+.admin-expired {
+	font-weight: bold;
+}
+
+/* listing location meta box */
+#normal-sortables #project-location.postbox #project-map,
+#normal-sortables #project-location.postbox #project-find-on-map,
+#normal-sortables #event-location.postbox #event-map,
+#normal-sortables #event-location.postbox #event-find-on-map {
+	margin: 10px;
+}
+
+#normal-sortables #project-location.postbox #project-address,
+#normal-sortables #event-location.postbox #project-address {
+	width: 25em;
+}
+
+#normal-sortables #project-location.postbox #project-map,
+#normal-sortables #event-location.postbox #event-map {
+	width: 520px;
+	height: 300px;
+	position: relative;
+}
+
+#side-sortables #project-location.postbox #project-map,
+#side-sortables #event-location.postbox #event-map {
+	width: 260px;
+	height: 260px;
+}
+
+#side-sortables #project-location.postbox .form-table th,
+#side-sortables #event-location.postbox .form-table th {
+	padding: 10px 0;
+}
+
+#side-sortables #project-location.postbox .form-table td,
+#side-sortables #event-location.postbox .form-table td {
+	padding: 5px 0;
+}
+
+#side-sortables #project-location.postbox #project-find-on-map,
+#side-sortables #event-location.postbox #event-find-on-map {
+	margin: 10px 0;
+}
+
+.project-gallery-info {
+	font: italic 10px sans-serif;
+	display: block;
+	color: #666;
+}
+
+.files-placeholder {
+	border: 1px solid #ccc;
+	padding: 5px;
+	margin: 5px 0;
+}
+
+.promotional-title {
+	border-top: 1px solid #ccc;
+}
+
+th.promotional-title {
+	font-weight: bold;
+}
+
+li.parent-list ul.children {
+	margin: 0 0 10px 25px;
+}
+
+#profile-page li.hrb-taxonomy {
+	list-style-type: none;
+}
